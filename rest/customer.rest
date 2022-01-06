@@ -1,0 +1,30 @@
+@port = 3000
+@baseUrl = http://localhost:{{port}}/api
+
+GET {{baseUrl}}/customer/
+
+###
+GET {{baseUrl}}/customer/61d06c8838192b37e7ae71cf/
+
+###
+POST {{baseUrl}}/customer/
+Content-Type: application/json
+
+{
+    "name": "Karthik",
+    "isGold": true,
+    "phone": "28877333"
+}
+
+###
+PUT {{baseUrl}}/customer/61d06c8838192b37e7ae71cf/
+Content-Type: application/json
+
+{
+    "name": "Karthik",
+    "isGold": true,
+    "phone": "99229922"
+}
+
+###
+DELETE  {{baseUrl}}/customer/61d06ab8b40b8ae203dd9b26/

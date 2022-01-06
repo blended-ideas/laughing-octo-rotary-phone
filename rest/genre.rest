@@ -1,0 +1,26 @@
+@port = 3000
+@baseUrl = http://localhost:{{port}}/api
+
+GET {{baseUrl}}/genres/
+
+###
+GET {{baseUrl}}/genres/61d067bd6749fc82d1a98e5b/
+
+###
+POST {{baseUrl}}/genres/
+Content-Type: application/json
+
+{
+    "name": "Temp"
+}
+
+###
+PUT {{baseUrl}}/genres/61d067bd6749fc82d1a98e5b/
+Content-Type: application/json
+
+{
+    "name": "Sc-fi"
+}
+
+###
+DELETE  {{baseUrl}}/genres/61d06ab8b40b8ae203dd9b26/
